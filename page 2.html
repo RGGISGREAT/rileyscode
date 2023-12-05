@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJerseys - Products</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #00274e;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #00274e;
+        }
+
+        p {
+            color: #555;
+        }
+
+        footer {
+            background-color: #00274e;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        button {
+            background-color: #00274e;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #001a33;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>RJerseys</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Our Products</h2>
+
+        <div>
+            <img src="jersey1.jpg" alt="Jersey 1">
+            <h3>Awesome Jersey 1</h3>
+            <p>High-quality fabric and vibrant colors make this jersey a top choice.</p>
+            <button onclick="showDetails('jersey1')">View Details</button>
+        </div>
+
+        <div>
+            <img src="jersey2.jpg" alt="Jersey 2">
+            <h3>Cool Jersey 2</h3>
+            <p>Stay stylish on and off the field with this comfortable and trendy jersey.</p>
+            <button onclick="showDetails('jersey2')">View Details</button>
+        </div>
+
+        <!-- Add more product entries as needed -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 RJerseys</p>
+    </footer>
+
+    <script>
+        function showDetails(productName) {
+            // Implement logic to show detailed information about the selected product
+            alert('Details for ' + productName);
+        }
+    </script>
+</body>
+
+</html>
